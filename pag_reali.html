@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcyt icon" href="img/icones/witch-hat.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Página de Realizações</title>
+
+</head>
+
+<body>
+    <section> <!--  Navbar -->
+        <header>
+            <nav>
+                <a class="logo" href="index.html"><img src="img/icones/bruxa.png" height="32px"> Blog Pessoal</a>
+                <div class="menu-mobile">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
+                <ul class="nav-lista">
+                    <li> <button class="botao-tema" id="theme-toggle">Tem medo do escuro?</button></li>
+                    <li> <button class="botao-tema" onclick="openModal()">Novo Post</button></li>
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()">Opções</button>
+                            <div class="dropdown-content">
+                                <a href="include.html">Include</a>
+                                <a href="pag_perfil.html">Perfil</a>
+                                <a href="index.html">Menu</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+    </section>
+
+
+    <main>
+
+        <h1>Realizações</h1>
+
+        <div class="posts" id="post-container">
+            <!-- primeiro post -->
+            <div>
+                <img src="img/logoifrn.png">
+            </div>
+            <div>
+                <h2>Federal Pela Primeira Vez</h2>
+                <!-- <p class="hobbies">Descrição: </p> -->
+                <p>
+                    Passei em uma instituição federal pela primeira vez ao ingressar no curso técnico de nível médio em
+                    Informática no IFRN, Campus Canguaretama. Pode ter sido uma conquista inicial, mas teve um grande
+                    significado para mim, pois abriu minha mente para o vasto mundo da tecnologia e despertou meu
+                    interesse pela área.
+                </p>
+            </div>
+            <div><br><br></div>
+            <div><br><br></div>
+            <!-- segundo post -->
+
+            <div>
+                <img src="img/programacao.jpg">
+            </div>
+            <div>
+                <h2>Programação</h2>
+                <!-- <p class="hobbies">Descrição: </p> -->
+                <p> A programação entrou na minha vida quando ingressei no IFRN, onde tive a oportunidade de explorar e
+                    me encantar por esse universo. Embora tenha me afastado um pouco da área por um tempo, estou certo
+                    de que é com programação que quero construir minha carreira e aprofundar meus conhecimentos.</p>
+            </div>
+            <div><br><br></div>
+            <div><br><br></div>
+            <!-- terceiro post -->
+
+            <div>
+                <img src="img/ufrn.png">
+            </div>
+            <div>
+                <h2>Federal Pela Segunda Vez</h2>
+                <!-- <p class="hobbies">Descrição: </p> -->
+                <p> A programação entrou na minha vida
+                    quando entrei para o IFRN, lá pode conhecer esse mundo e disfrutar um pouco do que ele oferece. A
+                    uma tempo me afastei um pouco da programação, mas tenho certeza de que quero trabalhar com isso.</p>
+            </div>
+
+            <!-- =============================================== -->
+
+            <!-- Container onde os posts são exibidos -->
+
+
+        </div>
+
+        <div><br><br></div>
+        <div><br><br></div>
+
+
+        <!-- Modal para adicionar post -->
+        <div id="post-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h3>Adicionar Novo Post</h3>
+                <br>
+                <p>Adicione o título:</p>
+                <input type="text" id="post-title" placeholder="Digite o título do post"><br><br>
+                <p>Adicione a url da imagem:</p>
+                <input type="url" id="post-image" placeholder="Digite o URL da imagem"><br><br>
+                <p>Adicione uma descrição:</p>
+                <textarea id="post-description" cols="50" rows="10" class="caixa-texto"
+                    placeholder="Digite a descrição do post"></textarea><br><br>
+                <button class="botao-tema" onclick="addPost()">Adicionar Post</button>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="div-footer">
+            <div class="social-icons">
+                <h2>Contato</h2>
+                <br>
+                <p>Email: matheushuck06@gmail.com</p>
+                <br>
+                <p>Telefone: (84) 98644-0745</p>
+                <br>
+                <a href="https://www.instagram.com/matheusy0/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/matheus-bezerra-0195b0235/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/MatthLB" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="social-icons">
+                <h2>localização:</h2>
+                <br>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15876.392722412887!2d-35.1996827!3d-5.8417846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff93abc3e2fb%3A0xb26233c3668542c0!2sInclude%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1731716120770!5m2!1spt-BR!2sbr"
+                width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- <div class="mapa"> 
+                
+            </div> -->
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('open');
+        }
+    </script>
+
+
+    <script src="java-script/config.js"></script>
+
+</body>
+
+</html>

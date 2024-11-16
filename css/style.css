@@ -1,0 +1,786 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    /*sem o sublinhado */
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-io, -apple-system, Arial, Helvetica, sans-serif;
+    background: #e78607;
+    height: 8vh;
+    /*unidade que se adapta a janela de visualisação  */
+}
+
+main {
+    background-color: #f5eee6;
+    height: auto;
+    font-family: system-io, -apple-system, Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+}
+
+.nav-lista li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.menu-mobile {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-mobile div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+
+.nav-lista.active {
+    transform: translateX(0);
+}
+
+/* mobile */
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.img-primaria {
+    height: 300px;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.div-primaria {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    margin-top: 10%;
+    place-items: center;
+}
+
+.texto-primario {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* Área do botão */
+.myButton {
+    box-shadow: inset 0px 0px 0px 0px #e78607;
+    background: linear-gradient(to bottom, #e78607 5%, #e78607 100%);
+    background-color: #e78607;
+    border-radius: 20px;
+    border: 1px solid #e78607;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 25px 30px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #e78607;
+    width: 200px;
+    text-align: center;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #e78607 5%, #e78607 100%);
+    background-color: #e78607;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Rodapé */
+
+footer {
+    background: #e78607;
+    height: auto;
+}
+
+.div-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+/* ====================== Morcego ========================= */
+
+.morcego {
+    font-size: 50px;
+    /* Tamanho */
+    position: absolute;
+    top: 110px;
+    /*  posição  */
+    left: 30%;
+    /* Centraliza na horizontal */
+    transform: translateX(-50%);
+    /* Ajusta a posição para centralizar */
+    animation: voar 4s infinite ease-in-out;
+}
+
+@keyframes voar {
+    0% {
+        transform: translate(-50%, 0);
+        /* Posição inicial */
+    }
+
+    50% {
+        transform: translate(-50%, -20px);
+        /* Sobe um pouco */
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+        /* Volta à posição inicial */
+    }
+}
+
+/* ============================== página perfil ======================== */
+
+main h1 {
+    text-align: center;
+    padding-top: 40px;
+    color: #ffffff;
+    /* Cor clara para destacar sobre fundos escuros */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    /* Sombra escura para dar contraste */
+    font-size: 3em;
+    /* Aumenta o tamanho para mais destaque */
+
+}
+
+.container-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: 1000px;
+    width: 1200px;
+}
+
+.container-info img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hobbies {
+    font-weight: bold;
+    color: #333;
+}
+
+.container-info p {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+
+}
+
+.container-info ul {
+    margin-left: 60px;
+}
+
+.container-info h3 {
+    margin-bottom: 50px;
+    color: #e78607;
+    text-align: center;
+}
+
+.container-pq {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: auto;
+    width: 800px;
+}
+
+.container-pq p {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 20px;
+
+}
+
+.inclu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: 1000px;
+    width: 1200px;
+}
+
+.inclu img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.inclu h2 {
+    color: #e78607;
+}
+
+.inclu p {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* =================== Página de Realizações =================== */
+
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: auto;
+    width: 1000px;
+}
+
+.posts h2 {
+    color: #e78607;
+}
+
+.modal-content h2 {
+    color: #e78607;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.posts img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.posts p {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+.delete-btn {
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+    float: inline-end;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    /* Modal oculto por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal input {
+    font-family: Poppins-Regular;
+    line-height: 1.2;
+    font-size: 18px;
+    width: 400px;
+    background: transparent;
+    height: 60px;
+
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.close-btn {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+/* animação e responsividade */
+
+@media (max-width: 1550px) {
+    .morcego {
+        top: 100px;
+        left: 300px;
+    }
+
+    .container-info {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 50px;
+        height: 1100px;
+        width: 500px;
+    }
+
+    .posts {
+        margin-left: 15%;
+        width: 900px;
+    }
+
+    .container-pq {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 50px;
+        height: auto;
+        width: 500px;
+    }
+
+}
+
+
+
+@media (max-width: 1200px) {
+    .morcego {
+        top: 90px;
+        left: 140px;
+    }
+
+    .container-info {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: #f9f9f9;
+        width: 500px;
+    }
+
+    .inclu {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: #f9f9f9;
+        width: 500px;
+        height: auto;
+    }
+
+    .container-pq {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: #f9f9f9;
+        width: 500px;
+    }
+
+    .posts {
+        margin-left: 13%;
+        width: 800px;
+    }
+
+}
+
+@media (max-width: 990px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-lista {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #e78607;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        /* chegada suave */
+    }
+
+    .nav-lista li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .div-primaria {
+        display: block;
+        text-align: center;
+
+    }
+
+    .div-footer {
+        display: block;
+        padding-left: 30px;
+
+    }
+
+    .myButton {
+        margin-top: 15px;
+    }
+
+    .morcego {
+        top: 20px;
+        left: 140px;
+    }
+
+    .img-susto {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+
+    }
+
+    .container-info {
+        display: grid;
+        grid-template-columns: auto;
+        /* Define uma linhas */
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: #f9f9f9;
+        width: 400px;
+
+    }
+
+    .inclu {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: #f9f9f9;
+        width: 400px;
+        height: auto;
+    }
+
+    .container-pq {
+        display: grid;
+        grid-template-columns: auto;
+        /* Define uma linhas */
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: #f9f9f9;
+        width: 400px;
+    }
+
+    .posts {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: #f9f9f9;
+        text-align: center;
+        width: 350px;
+    }
+
+}
+
+
+
+/* ======================================= */
+
+@media (max-width: 480px) {
+
+    .img-primaria {
+        height: 270px;
+        padding-left: 70px;
+        padding-top: 0px;
+    }
+
+    .modal-content {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .caixa-texto{
+        max-width: 200px;
+    }
+
+    .modal input {
+       
+        width: 250px;
+        background: transparent;
+        height: 60px;
+    
+    }
+
+    .container-info {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #ddd;
+        width: 280px;
+        padding-bottom: 200px;
+    }
+
+    .container-pq {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #ddd;
+        width: 280px;
+        padding-bottom: 200px;
+    }
+
+    .inclu {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #ddd;
+        width: 280px;
+        height: auto;
+    }
+
+    .posts {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #ddd;
+        width: 280px;
+    }
+
+
+
+}
+
+
+.botao-tema {
+    background-color: #e78607;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+}
+
+.botao-tema:hover {
+    background-color: #ddd;
+}
+
+.dropdown button {
+    background-color: #e78607;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e78607;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
+.dropdown button:hover {
+    background-color: #ddd;
+
+}
+
+
+/* ========================== Dark Mode ======================= */
+
+body.dark-mode main {
+    background-image: url("../img/tema-fundo.webp");
+    background-size: cover;
+    /* Ajusta a imagem para cobrir toda a área */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+    background-attachment: fixed;
+    /* Faz o fundo ficar fixo ao rolar a página */
+}
+
+body.dark-mode footer,
+body.dark-mode nav,
+body.dark-mode .botao-tema,
+body.dark-mode .myButton {
+    background: #1C1C1C;
+}
+
+body.dark-mode .nav-lista {
+    background: #1C1C1C;
+}
+
+body.dark-mode .modal h2,
+body.dark-mode .posts h2,
+body.dark-mode .inclu h2 {
+    color: #fff;
+}
+
+body.dark-mode .dropdown button {
+    background-color: #1C1C1C;
+}
+
+body.dark-mode .dropdown-content {
+    background-color: #1C1C1C;
+}
+
+body.dark-mode .inclu,
+body.dark-mode .container-info,
+body.dark-mode .container-pq,
+body.dark-mode .posts {
+    background-color: #1C1C1C;
+    color: #ddd;
+}
+
+body.dark-mode .hobbies {
+    color: #ddd;
+}

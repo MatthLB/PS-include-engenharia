@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcyt icon" href="img/icones/witch-hat.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Página de Perfil</title>
+</head>
+
+<body>
+    <section> <!--  Navbar -->
+        <header>
+            <nav>
+                <a class="logo" href="index.html"><img src="img/icones/bruxa.png" height="32px"> Blog Pessoal</a>
+                <div class="menu-mobile">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
+                <ul class="nav-lista">
+                    <li> <button class="botao-tema" id="theme-toggle">Tem medo do escuro?</button></li>
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()">Opções</button>
+                            <div class="dropdown-content">
+                                <a href="include.html">Include</a>
+                                <a href="pag_reali.html">Realizações</a>
+                                <a href="index.html">Menu</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+    </section>
+
+    <main>
+        <h1>Bem Vindo a Minha Página de Perfil</h1>
+       
+        <!-- <img src="img/teia-1.png" class="imagem"> -->
+        <div class="container-info">
+
+            <div>
+                <img src="img/perfil-matheus.jpg" id="img1">
+            </div>
+            <div>
+                <h3>Conheça-me Melhor</h3>
+                <p class="hobbies">Descrição Sobre Mim:</p>
+                <p>Olá me chamo Matheus, fiz o curso técnico em informática no IFRN e de lá surgiu meus interesse pela
+                    área da tecnologia. Busco adquirir conhecimento na área pois sei que com ela podemos fazer grandes
+                    feitos para a sociedade.</p>
+                <p><span class="hobbies">Nome Completo:</span> Matheus de Lima Bezerra</p>
+                <p><span class="hobbies">E-mail:</span> matheushuck06@gmail.com</p>
+                <p><span class="hobbies">Curso:</span> C&T</p>
+                <p class="hobbies">Alguns dos meus hobbies favoritos:</p>
+                <ul class="hobbies-list">
+                    <li>Musculação</li>
+                    <li>Jogar Jogos Eletrônicos</li>
+                    <li>Programação</li>
+                    <li>Assistir Séries</li>
+                </ul>
+                <p class="hobbies">Algumas das minhas habilidades:</p>
+                <ul class="hobbies-list">
+                    <li>Trabalho em Equipe</li>
+                    <li>Dedicado</li>
+                    <li>Comunicativo</li>
+                    <li>Programação Básica</li>
+                    <li>Pensamento Criativo</li>
+                </ul>
+            </div>
+        </div>
+        <h1>Porque Devo Entrar na Include?</h1>
+        <div class="container-pq">
+            <p>Olá, me chamo Matheus. Atualmente, estou cursando Ciência e Tecnologia e concluí o ensino médio integrado ao técnico em Informática pelo IFRN. Desde o primeiro semestre na faculdade, a Include despertou meu interesse, mas inicialmente não me candidatei por não haver vagas para o meu curso sem ênfase. Quando vi que o atual processo seletivo abriu essa possibilidade, percebi que era minha chance de tentar a vaga. Tenho certeza de que posso contribuir significativamente para a Include, pois sempre darei o meu máximo, independente da missão ou objetivo que me for confiado.
+
+                Ter a oportunidade de contribuir ao lado da alcateia certamente me proporcionará grandes experiências e aprendizados que levarei não apenas para a minha vida profissional, mas também para a pessoal. Caso minha entrada na Include seja possível, tenho certeza de que um novo e importante ciclo começará em minha trajetória. Saibam que, ao me aceitarem, não estarão recebendo apenas mais um membro, mas alguém disposto a contribuir de todas as formas e a zelar pelo desenvolvimento da empresa.
+                
+                Agradeço imensamente a todos vocês que fazem parte da Include pela oportunidade.
+            </p>
+        </div>
+        <br><br>
+
+    </main>
+
+
+    <section>
+        <footer>
+            <div class="div-footer">
+                <div class="social-icons">
+                   <h2>Contato</h2>
+                    <br>
+                    <p>Email: matheushuck06@gmail.com</p>
+                    <br>
+                    <p>Telefone: (84) 98644-0745</p>
+                    <br>
+                    <a href="https://www.instagram.com/matheusy0/"  target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/matheus-bezerra-0195b0235/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/MatthLB" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <div class="social-icons">
+                    <h2>localização:</h2>
+                    <br>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15876.392722412887!2d-35.1996827!3d-5.8417846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff93abc3e2fb%3A0xb26233c3668542c0!2sInclude%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1731716120770!5m2!1spt-BR!2sbr"
+                    width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- <div class="mapa"> 
+                    
+                </div> -->
+            </div>
+        </footer>
+    </section>
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('open');
+        }
+    </script>
+    <script src="java-script/config.js"></script>
+</body>
+
+</html>
