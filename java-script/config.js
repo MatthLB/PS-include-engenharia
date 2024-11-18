@@ -1,51 +1,10 @@
 
 // ======================== responsivo ======================
 
-class NavbarMobile {
-    constructor(menuMobile, navLista, navLinks) {
-        this.menuMobile = document.querySelector(menuMobile);
-        this.navLista = document.querySelector(navLista);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = "active";
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
 
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    animateLinks() {
-        this.navLinks.forEach((link, index) => {
-            link.style.animation
-                ? (link.style.animation = "")
-                : (link.style.animation = `navLinkFade 0.5 ease forwards ${index / 7 + 0.3
-                    }s`);
-        });
-    }
-
-    handleClick() {
-        this.navLista.classList.toggle(this.activeClass);
-        this.menuMobile.classList.toggle(this.activeClass);
-        this.animateLinks();
-    }
-
-
-    addClickEvent() {
-        this.menuMobile.addEventListener("click", this.handleClick);
-    }
-
-    init() {
-        if (this.menuMobile) {
-            this.addClickEvent();
-        }
-        return this;
-    }
-}
-
-
-const navbarMobile = new NavbarMobile(
-    ".menu-mobile",
-    ".nav-lista",
-    ".nav-lista li",
-);
-navbarMobile.init();
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
 
 
 

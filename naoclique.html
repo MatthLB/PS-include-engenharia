@@ -15,7 +15,7 @@
             /* largura total da viewport */
             height: 100vh;
             /* altura total da viewport */
-            background-image: url('sua-imagem.jpg');
+            background-image: url("img/img-susto.jpg");
             background-size: cover;
             /* para cobrir toda a área do elemento */
             background-position: center;
@@ -32,12 +32,26 @@
         body {
             background-color: black;
         }
+
+        @media (max-width: 990px) {
+            .container {
+                width: 100vw;
+                /* largura total da viewport */
+                height: 100vh;
+                /* altura total da viewport */
+                background-image: url("img/susto-celular.jpg");
+                background-size: cover;
+                /* para cobrir toda a área do elemento */
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
     </style>
 </head>
 
 <body class="container">
 
-    <a href="index.html"><img class="img-susto" src="img/img-susto.jpg"></a>
+     <a href="index.html">Voltar</a> 
 
 </body>
 
