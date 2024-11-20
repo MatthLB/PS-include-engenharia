@@ -53,6 +53,8 @@ function closeModal() {
     document.getElementById("post-modal").style.display = "none";
 }
 
+
+
 // Função para adicionar um post
 function addPost() {
     const postTitle = document.getElementById("post-title").value;
