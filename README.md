@@ -23,7 +23,7 @@ O blog tem uma **temática de Halloween**, combinando elementos visuais temátic
 
 Você pode assistir ao vídeo demonstrativo clicando no link abaixo:
 
-[Assistir vídeo](./img/Index.mp4)
+[Assistir vídeo](./img/Index.gif)
 
 
 ## 🌐 Acesse o Projeto
