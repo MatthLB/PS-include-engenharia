@@ -21,9 +21,9 @@ O blog tem uma **temática de Halloween**, combinando elementos visuais temátic
 
 ## 🎥 Demonstração
 
-Você pode assistir ao vídeo demonstrativo clicando no link abaixo:
+Você pode assistir ao um gif demonstrativo clicando no link abaixo:
 
-[Assistir vídeo](./img/Index.gif)
+![Demonstração](./img/Index.gif)
 
 
 ## 🌐 Acesse o Projeto
