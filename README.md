@@ -29,7 +29,8 @@ Você pode assistir ao um gif demonstrativo clicando no link abaixo:
 ## 🌐 Acesse o Projeto
 
 O projeto está hospedado no GitHub Pages.  
-👉 [**Acessar Blog Pessoal**](https://matthlb.github.io/PS-include-engenharia/)
+
+[![Demo Online](https://img.shields.io/badge/Demo-Online-blueviolet)](https://matthlb.github.io/PS-include-engenharia/)
 
 
 ## ✍️ Sobre o Autor
