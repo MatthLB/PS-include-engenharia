@@ -21,12 +21,9 @@ O blog tem uma **temática de Halloween**, combinando elementos visuais temátic
 
 ## 🎥 Demonstração
 
-Você pode visualizar uma prévia do projeto através do vídeo abaixo:
+Você pode assistir ao vídeo demonstrativo clicando no link abaixo:
 
-📽️ 
-<p align="center">
-  <img src="img/Index.mp4" alt="Tela Principal" width="700"/>
-</p>
+[Assistir vídeo](./img/Index.mp4)
 
 
 ## 🌐 Acesse o Projeto
